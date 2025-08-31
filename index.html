@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMC</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-linear-to-t from-blue-50 to-white overflow-x-hidden">
+    <div class="w-9/10 mx-auto md:w-[calc(100%-40px)] lg:w-8/10">
+      <header class="flex justify-between items-center mt-3 h-14 mx-auto">
+        <img src="./assets/logo-dark.svg" alt="logo" class="logo" />
+        <button class="bg-blue-950 start-btn hover-0 hover:bg-[#666ca3]">
+          Get Started
+        </button>
+      </header>
+
+      <main>
+        <section
+          class="grid content-center space-y-5 h-[calc(var(--spacing)*90)] md:w-sm md:h-[clamp(700px,60vw,800px)] lg:w-md lg:space-y-8"
+        >
+          <h1
+            class="text-[40px] font-extrabold text-blue-950 leading-11 md:leading-12 lg:text-5xl lg:leading-18"
+          >
+            Maximize skill, minimize budget
+          </h1>
+          <p class="text-gray-500 font-medium text-md lg:text-lg">
+            Our modern courses across a range of in-demand skills will give you
+            the knowledge you need to live the life you want.
+          </p>
+          <button
+            class="py-3 px-5 bg-ortoink w-fit start-btn hover-0 hover:opacity-65"
+          >
+            Get Started
+          </button>
+        </section>
+
+        <picture
+          class="my-5 md:m-0 md:w-[clamp(768px,80vw,990px)] md:absolute md:-z-10 md:-top-24 md:-right-80 lg:-top-28 lg:-right-80"
+        >
+          <!-- desktop -->
+          <source
+            media="(min-width:1024px)"
+            srcset="./assets/image-hero-desktop@2x.png"
+          />
+          <source
+            media="(min-width:1024px)"
+            srcset="./assets/image-hero-desktop@2x.webp"
+          />
+
+          <!-- tablet -->
+          <source
+            media="(min-width:768px)"
+            srcset="./assets/image-hero-tablet@2x.png"
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="./assets/image-hero-tablet@2x.webp"
+          />
+
+          <!-- mobile -->
+          <source srcset="./assets/image-hero-mobile@2x.png" />
+          <source srcset="./assets/image-hero-mobile@2x.webp" />
+
+          <img
+            src="./assets/image-hero-mobile.png"
+            alt="hero-image"
+            class="w-full"
+          />
+        </picture>
+
+        <section
+          class="grid gap-y-12 justify-items-center md:grid-cols-2 md:gap-x-5 lg:grid-cols-3 lg:grid-rows-[repeat(2,322px)]"
+        >
+          <article
+            class="px-6 py-10 font-bold text-white bg-ortoink rounded-2xl text-2xl w-full lg:text-3xl"
+          >
+            <p>Check Out our most popular courses!</p>
+          </article>
+          <article class="course">
+            <img src="./assets/icon-animation.svg" alt="icon-animation" />
+
+            <h2>Animation</h2>
+            <p>
+              Learn the latest animation techniques to create stunning motion
+              design and captivate your audience.
+            </p>
+            <button class="hover-0">Get Started</button>
+          </article>
+          <article class="course">
+            <img src="./assets/icon-design.svg" alt="icon-design" />
+            <h2 class="font-bold text-2xl">Design</h2>
+            <p>
+              Create beautiful, usable interfaces to help shape the future of
+              how the web looks.
+            </p>
+            <button class="hover-0">Get Started</button>
+          </article>
+          <article class="course">
+            <img src="./assets/icon-photography.svg" alt="icon-photography" />
+            <h2>Photography</h2>
+            <p>
+              Explore critical fundamentals like lighting, composition, and
+              focus to capture exceptional photos.
+            </p>
+            <button class="hover-0">Get Started</button>
+          </article>
+          <article class="course">
+            <img src="./assets/icon-crypto.svg" alt="icon-crypto" />
+            <h2>Crypto</h2>
+            <p>
+              All you need to know to get started investing in crypto. Go from
+              beginner to advanced with this 54 hour course.
+            </p>
+            <button class="hover-0">Get Started</button>
+          </article>
+
+          <article class="course">
+            <img src="./assets/icon-business.svg" alt="icon-business" />
+            <h2>Business</h2>
+            <p>
+              A step-by-step playbook to help you start, scale, and sustain yout
+              business without outside inverstment.
+            </p>
+            <button class="hover-0">Get Started</button>
+          </article>
+        </section>
+      </main>
+    </div>
+    <footer class="bg-blue-950 h-24 mt-25 grid content-center">
+      <div
+        class="flex justify-between items-center w-9/10 md:w-[calc(100%-40px)] lg:w-8/10 mx-auto"
+      >
+        <img src="./assets/logo-light.svg" alt="logo" class="logo" />
+        <button
+          class="bg-linear-to-b from-blue-600 to-pink-500 start-btn hover-0 hover:from-blue-400 hover:to-pink-400"
+        >
+          Get Started
+        </button>
+      </div>
+    </footer>
+  </body>
+</html>
